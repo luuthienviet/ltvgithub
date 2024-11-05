@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>điền thông tin</title>
+</head>
+<body>
+<h1>GUST RESERVATION</h1>
+<fieldset>
+    <legend>GUST RESERVATION</legend>
+Arrival date: <input type="text" name="ARRIVAL DATE"><br> 
+Nights: <input type="text" name="Nights"><br>
+<label for="adults">Adults:</label> 
+  <select id="adults" name="adults">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select> <br>
+<label for="children">Children:</label>
+<select id="children" name="children">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+</select>  
+</fieldset>
+<fieldset>
+    <legend> Preferences</legend>
+room type:
+<input type="radio" name="Preferences" value="stan"> standard
+<input type="radio" name="Preferences" value="busi"> business
+<input type="radio" name="Preferences" value="sui"> suite <br>
+<input type="checkbox" name="Preferences" value="smok"> smoking
+</fieldset>
+<fieldset>
+    <legend> Contact information </legend>
+Name: <input type="text" name ="Contact information" placeholder="Enter an user name"><br> 
+Email: <input type="email" name="Contact information" placeholder="gmail"><br>
+Phong: <input type="number" name="Contact information" placeholder="phone"><br> 
+
+</fieldset>
+<input type="submit" name="submit Reservation" value="submit Reservation">
+
+</body>
+</html>
