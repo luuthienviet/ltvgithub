@@ -10,8 +10,8 @@ body {
 }
 
 header {
-  background: url(images/hero.png) no-repeat center center; /* Căn giữa ảnh nền */
-  background-size: cover; /* Làm cho ảnh nền bao phủ toàn bộ phần tử */
+  background: url(images/hero.png) no-repeat center center; 
+  background-size: cover; 
   color: rgb(15, 15, 15);
   padding: 10px 20px;
   position: relative;
