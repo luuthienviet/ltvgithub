@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(248, 245, 245);
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#toggle img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#toggle span{
+    color: rgb(128, 19, 231);
+    font-weight: bold;
+}
+
+#details {
+    display: none;
+    margin-top: 11px;
+}

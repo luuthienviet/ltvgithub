@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const toggleDetails = document.getElementById('toggle');
+            const details = document.getElementById('details');
+            const toggleText = document.getElementById('text');
+            const toggleArrow = document.getElementById('arrow');
+
+            toggleDetails.addEventListener('click', function () {
+                if (details.style.display === 'none' || details.style.display === '') { // an hoac hien cai trong no
+                    details.style.display = 'block'; // tao thanh 1 block hoac flex
+                    toggleText.textContent = 'Hide details'; // hien cho mui ten 
+                    toggleArrow.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/down-arrow.png';
+                } else {
+                    details.style.display = 'none'; 
+                    toggleText.textContent = 'Show details';
+                    toggleArrow.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/forward-arrow.png';
+
+                }
+            });
+            });
+    </script>
+</head>
+<body>
+
+    <h1>Homework guidelines</h1>
+    <h3>Late Days</h3>
+    <p>Homework turned in on-time will get a small on-time bonus. Homework can be turned in up to 48 hours past the deadline without penalty.</p>
+
+    <div id="toggle">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/forward-arrow.png" id="arrow">
+        <span id="text">Show details</span>
+    </div>
+    <div  id="details">
+        <ul>
+            <li>
+                <p>Homework will not be accepted past the late cutoff. You will receive a 0 for the assignment if it is not turned in by the late cutoff.</p>
+            </li>
+            <li>
+                <p>If you are not sure whether you can finish the assignment by the late cutoff, you should turn it in before the deadline anyway to get partial credit. You are allowed to update your GitHub homework submission as many times as you need to before the late cutoff.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
