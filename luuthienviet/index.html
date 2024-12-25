@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tasks</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="task-container">
+        <h1>Daily Tasks</h1>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList" class="task-list">
+            <li class="completed">
+                <span>Your Task</span>
+                <button onclick="deleteTask(this)">X</button>
+            </li>
+        </ul>        
+    </div>
+</body>
+</html>
